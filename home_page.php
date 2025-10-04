@@ -72,7 +72,7 @@ footer {
 <body>
 
 <h2 style="text-align:center;">AMIE</h2>
-<p>this is me</p>
+<p style="text-align:center;">this is me</p>
 <header>
   <h2>Cities</h2>
 </header>
