@@ -11,60 +11,90 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
 }
 
-/* Style the header */
 header {
-  background-color: #666;
+  background-color: #3498db;
   padding: 30px;
   text-align: center;
   font-size: 35px;
   color: white;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
+  min-height: 300px;
+  background: #eaf6fb;
   padding: 20px;
+  border-radius: 16px;
+  margin-right: 2%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 2px solid #3498db;
 }
 
-/* Style the list inside the menu */
 nav ul {
   list-style-type: none;
   padding: 0;
 }
 
+nav ul li {
+  margin-bottom: 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+nav ul li a:hover {
+  color: #217dbb;
+}
+
 article {
   float: left;
   padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  width: 68%;
+  background-color: #fff;
+  min-height: 300px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 2px solid #eaf6fb;
 }
 
-/* Clear floats after the columns */
+section {
+  background: #f9fbfd;
+  padding: 24px 0;
+  border-radius: 18px;
+  margin: 24px 0;
+}
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
 footer {
-  background-color: #777;
-  padding: 10px;
+  background-color: #3498db;
+  padding: 14px;
   text-align: center;
   color: white;
+  border-radius: 16px 16px 0 0;
+  margin-top: 32px;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
-    height: auto;
+    min-height: auto;
+    margin-right: 0;
+    margin-bottom: 16px;
   }
 }
 </style>
@@ -72,7 +102,7 @@ footer {
 <body>
 
 <h2 style="text-align:center;">AMIE</h2>
-<p style="text-align:center;">this is me</p>
+<p style="text-align:center;">This is my Website
 <header>
   <h2>Cities</h2>
 </header>
